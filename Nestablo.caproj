@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
-    <description></description>
-    <version>1.0.0.0</version>
-    <author></author>
+    <name>Nestablo</name>
+    <description>Game for Nestablo</description>
+    <version>1.1.0.0</version>
+    <author>Guilherme</author>
     <author-email></author-email>
     <author-website>http://</author-website>
-    <app-id>com.mycompany.myapp</app-id>
+    <app-id>com.levelcap.nestablogame</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>25200</saved-with-version>
     <used-plugins>
