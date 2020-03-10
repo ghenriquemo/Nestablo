@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level1 sheet</name>
+    <events>
+        <include>Player sheet</include>
+        <event-group description="" sid="119023259200025" title="Player Movment">
+            <sub-events>
+                <event-group description="" sid="578039571253886" title="Moviment">
+                    <sub-events>
+                        <event-block sid="903257155974885">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="512538269226609" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="760211459088072" type="obj_player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="650049559288443">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="161317701043833" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="809726789457108" type="obj_player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
