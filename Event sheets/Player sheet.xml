@@ -5,7 +5,7 @@
     <events>
         <event-group description="" sid="872309906643678" title="Player Movment">
             <sub-events>
-                <event-group description="" sid="825186874098021" title="Moviment Mobile">
+                <event-group description="" sid="825186874098021" title="Moviment Mobile basic">
                     <sub-events>
                         <event-block sid="189491909272577">
                             <conditions>
@@ -77,8 +77,93 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-group description="" sid="670803626656273" title="Moviment Mobile diagnal">
+                    <sub-events>
+                        <event-block sid="115869014402557">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="611539856347944" type="Touch">
+                                    <param id="0" name="Object">obj_control_dir</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="800670179074709" type="obj_control_dir">
+                                    <param id="0" name="Instance variable">Dir</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Up/Right&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="943952647059600" type="obj_player">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="100988111157615" type="obj_player">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="713233896195851">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="707951207997743" type="Touch">
+                                    <param id="0" name="Object">obj_control_dir</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="136115118380537" type="obj_control_dir">
+                                    <param id="0" name="Instance variable">Dir</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Up/Left&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="234085963718817" type="obj_player">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="849999364519283" type="obj_player">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="489682455038252">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="717450706727884" type="Touch">
+                                    <param id="0" name="Object">obj_control_dir</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="112556570747968" type="obj_control_dir">
+                                    <param id="0" name="Instance variable">Dir</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Down/Right&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="453744194199356" type="obj_player">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="509292651374050" type="obj_player">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="274700738238992">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="826627105130689" type="Touch">
+                                    <param id="0" name="Object">obj_control_dir</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="387562340035268" type="obj_control_dir">
+                                    <param id="0" name="Instance variable">Dir</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Down/Left&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="848616405221903" type="obj_player">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="321436737660365" type="obj_player">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="168699662025040" title="Player Animation">
                     <sub-events>
+                        <comment>Right</comment>
                         <event-block sid="360196783620732">
                             <conditions>
                                 <condition id="4" name="Is touching object" sid="262228668164277" type="Touch">
@@ -96,6 +181,41 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="367821491992757">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="547676025837340" type="Touch">
+                                    <param id="0" name="Object">obj_control_dir</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="391096850312456" type="obj_control_dir">
+                                    <param id="0" name="Instance variable">Dir</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Down/Right&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="375817337152277" type="obj_player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="418050179108950">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="915310092705199" type="Touch">
+                                    <param id="0" name="Object">obj_control_dir</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="583025871949433" type="obj_control_dir">
+                                    <param id="0" name="Instance variable">Dir</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Up/Right&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="937718263828319" type="obj_player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Left</comment>
                         <event-block sid="563408304573436">
                             <conditions>
                                 <condition id="4" name="Is touching object" sid="626028563335904" type="Touch">
@@ -109,6 +229,40 @@
                             </conditions>
                             <actions>
                                 <action id="7" name="Set mirrored" sid="932190827562275" type="obj_player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="814541568888109">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="239491667463039" type="Touch">
+                                    <param id="0" name="Object">obj_control_dir</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="450247876991524" type="obj_control_dir">
+                                    <param id="0" name="Instance variable">Dir</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Down/Left&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="542441745089593" type="obj_player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="413629887124331">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="716349642463312" type="Touch">
+                                    <param id="0" name="Object">obj_control_dir</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="363623840744245" type="obj_control_dir">
+                                    <param id="0" name="Instance variable">Dir</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Up/Left&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="836879911103544" type="obj_player">
                                     <param id="0" name="State">0</param>
                                 </action>
                             </actions>

@@ -17,6 +17,8 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -49,6 +51,12 @@
             <behaviors>
                 <behavior-type name="8Direction" sid="779365942666954">
                     <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="976416164538573">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="268648054968119">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -88,18 +96,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="624509146529617" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Guilherme\Desktop\Game make\Resources\Free Bundle Constructor\2D resourcers C2\Sprites\Onscreen controls\transparentLight\transparentLight07.png">
-                        <collision-poly>
-                            <point x="0.3125" y="0.3125" />
-                            <point x="0.5" y="0" />
-                            <point x="0.69375" y="0.30625" />
-                            <point x="1" y="0.5" />
-                            <point x="0.69375" y="0.69375" />
-                            <point x="0.5" y="1" />
-                            <point x="0.30625" y="0.69375" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Guilherme\Desktop\Game make\Resources\Free Bundle Constructor\2D resourcers C2\Sprites\Onscreen controls\transparentDark\transparentDark05.png" />
                 </animation>
             </animation-folder>
         </object-type>
